@@ -60,7 +60,7 @@ public class LogSender {
                 .ofType(String.class);
 
         final OptionSet options = parser.parse(args);
-        if (!options.has(filename) || !options.has(server)) {
+        if (!options.has(filename)) {
             parser.printHelpOn(System.out);
             System.exit(1);
         }
